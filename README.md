@@ -56,4 +56,7 @@ Next steps:
   https://www.radix-ui.com/themes/docs/theme/typography
   to fix the font used by Next and radis ui
 
-react simple MDE edittor https://www.npmjs.com/package/react-simplemde-editor
+- react simple MDE edittor https://www.npmjs.com/package/react-simplemde-editor
+
+- react hook form npm install react-hook-form@7.46.1
+- setup register, control, handleSubmit, form , and now to send data to api we should install axios npm i axios@1.5.0
