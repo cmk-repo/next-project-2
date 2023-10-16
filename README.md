@@ -55,3 +55,5 @@ Next steps:
 
   https://www.radix-ui.com/themes/docs/theme/typography
   to fix the font used by Next and radis ui
+
+react simple MDE edittor https://www.npmjs.com/package/react-simplemde-editor
