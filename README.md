@@ -48,3 +48,7 @@ Next steps:
   https://www.prisma.io/docs/guides/other/troubleshooting-orm/help-articles/nextjs-prisma-client-dev-practices
 
   add this to client.ts in migrations to make sure only 1 instance is running
+
+  Now using radix
+
+  - Radix primitives npm install @radix-ui/themes
