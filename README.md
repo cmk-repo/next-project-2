@@ -27,4 +27,9 @@ prisma - intract to database npm i prisma@5.3.1 , npx prisma init
 set the schema to point to mysql
 set the env file to have mysql connecitons DATABASE_URL="mysql://root:test@localhost:3306/issue-tracker?schema=public"
 
-sql port is 3306
+sql port is 3306,
+
+npx prisma format
+npx prisma migrate dev
+
+- give name
