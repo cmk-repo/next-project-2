@@ -60,3 +60,4 @@ Next steps:
 
 - react hook form npm install react-hook-form@7.46.1
 - setup register, control, handleSubmit, form , and now to send data to api we should install axios npm i axios@1.5.0
+- to show error use radix call out
