@@ -52,3 +52,6 @@ Next steps:
   Now using radix
 
   - Radix primitives npm install @radix-ui/themes
+
+  https://www.radix-ui.com/themes/docs/theme/typography
+  to fix the font used by Next and radis ui
