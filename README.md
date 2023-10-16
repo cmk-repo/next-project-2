@@ -62,3 +62,7 @@ Next steps:
 - setup register, control, handleSubmit, form , and now to send data to api we should install axios npm i axios@1.5.0
 - to show error use radix call out
 - npm i @hookform/resolvers@3.3.1
+- added spiner and submit validation https://tw-elements.com/docs/standard/components/spinners/
+
+- chaging inline function in issue tracker page
+- seperation of concerns

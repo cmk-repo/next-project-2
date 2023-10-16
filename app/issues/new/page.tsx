@@ -30,6 +30,18 @@ const NewIssuePage = () => {
     const [isSubmitting, setSubmitting] = useState(false);
     //console.log(register('title'))
 
+    const onSubmit = handleSubmit(async (data) => {
+        //console.log(data)
+        try {
+            setSubmitting(true);
+            //createIssue(data) // since we are not re using this code so having this in component is okay
+            await axios.post('/api/issues', data)
+            router.push('/issues')
+        } catch (error) {
+            setSubmitting(false);
+            setError('Unexpected error occured')
+        }
+    });
 
 
     return (
@@ -37,23 +49,7 @@ const NewIssuePage = () => {
             {error && <Callout.Root color="red" className='mb-5'>
                 <Callout.Text>{error}</Callout.Text>
             </Callout.Root>}
-            <form className='space-y-3'
-                onSubmit={handleSubmit(async (data) => {
-                    //console.log(data)
-                    try {
-                        setSubmitting(true);
-                        await axios.post('/api/issues', data)
-                        router.push('/issues')
-                    } catch (error) {
-                        setSubmitting(false);
-                        setError('Unexpected error occured')
-
-                    }
-                }
-
-                )}
-
-            >
+            <form className='space-y-3' onSubmit={onSubmit}>
                 <TextField.Root>
                     <TextField.Input placeholder='Title' {...register('title')} />
                 </TextField.Root>
@@ -73,7 +69,7 @@ const NewIssuePage = () => {
 
                 <Button disabled={isSubmitting}> Submit New Issue {isSubmitting && <Spinner />}</Button>
             </form >
-        </div>
+        </div >
     )
 }
 
